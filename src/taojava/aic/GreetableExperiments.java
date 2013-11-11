@@ -18,9 +18,11 @@ public class GreetableExperiments {
                 g.greeter() };
 
         for (int i = 0; i < greeters.length; i++) {
-            pen.print(i + ": ");
-            greeters[i].greet(pen);
-        } // for
+            for (int j = 0; j < 3; j++) {
+                pen.print(i + "/" + j + ": ");
+                greeters[i].greet(pen);
+            } // for j
+        } // for i
     } // annoy
 
     /**
